@@ -1,2 +1,6 @@
 # PDF files
 *.pdf
+
+# uv / Python virtual environment
+.venv/
+uv.lock

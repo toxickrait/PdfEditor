@@ -43,6 +43,10 @@ Run the tool via:
 uv run python pdf_tool.py <command> [options]
 ```
 
+### VS Code Integration
+
+A `.vscode/settings.json` is included in this repo. It automatically points VS Code to the `.venv` created by `uv sync`, so the terminal and IntelliSense will use the correct environment with no extra configuration needed.
+
 ---
 
 ### Using pip
