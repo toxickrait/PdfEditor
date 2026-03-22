@@ -16,9 +16,36 @@ A lightweight command-line tool for common PDF manipulation tasks — merge, del
 
 ---
 
-## Requirements
+## Setup
 
-Install dependencies with pip:
+### Using uv (recommended)
+
+[uv](https://github.com/astral-sh/uv) is a fast Python package manager. If you don't have it yet:
+
+```bash
+# Windows (PowerShell)
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+
+# macOS / Linux
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+Then set up the project:
+
+```bash
+# Create a virtual environment and install all dependencies
+uv sync
+```
+
+Run the tool via:
+
+```bash
+uv run python pdf_tool.py <command> [options]
+```
+
+---
+
+### Using pip
 
 ```bash
 pip install pypdf pymupdf pillow pdf-redactor

@@ -1,0 +1,11 @@
+[project]
+name = "pdf-editor"
+version = "0.1.0"
+description = "A CLI tool for merging, deleting, redacting, reordering, and compressing PDFs."
+requires-python = ">=3.9"
+dependencies = [
+    "pypdf",
+    "pymupdf",
+    "pillow",
+    "pdf-redactor",
+]
